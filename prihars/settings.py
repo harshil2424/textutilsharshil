@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(-54%x%&#5ykv*l2=_$=7otvwuz(g1!iby!o2tq5m^)v4yt#^k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['prihars.gq']
 
