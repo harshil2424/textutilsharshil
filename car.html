@@ -19,12 +19,13 @@
 <div id="fore">
 	<div id="version">v1.1.3</div>
 	<div class="title" id="title">Online Racing Game!</div>
-	<div class="menuitem title">Pick a name:<br/><input id="name" class="title" ontouchstart="this.focus()" placeholder="Name"></input></div>
+	<div class="menuitem title">Pick a name:<br/>
+		<input id="name" class="title" ontouchstart="this.focus()" placeholder="Name"></input></div>
 	<script>
 		var color, updateColor, menu2, host, joinGame, codeCheck;
 	</script>
 	
-	<div class="menuitem title">Choose a color:<br/><div id="colorpicker" ontouchstart="event.touches[0].buttons = 1; this.onmousemove(event.touches[0])" ontouchmove="event.touches[0].buttons = 1; this.onmousemove(event.touches[0])" onmousedown="this.onmousemove(event)" onmousemove="if(event.buttons == 1){ var x = event.clientX - this.getBoundingClientRect().left; x = Math.min(this.clientWidth, Math.max(0, x)); color = Math.floor(x / this.clientWidth * 360); updateColor(); }"><div id="slider"></div></div></div>
+	<div class="menuitem title">Choose a color:<br/><div id="colorpicker" ontouchstart="event.touches[1].buttons = 1; this.onmousemove(event.touches[0])" ontouchmove="event.touches[0].buttons = 1; this.onmousemove(event.touches[0])" onmousedown="this.onmousemove(event)" onmousemove="if(event.buttons == 1){ var x = event.clientX - this.getBoundingClientRect().left; x = Math.min(this.clientWidth, Math.max(0, x)); color = Math.floor(x / this.clientWidth * 360); updateColor(); }"><div id="slider"></div></div></div>
 	<div class="menuitem title"><div id="start" onclick="menu2()">Start!</div></div>
 	<div id="settings" ontouchstart="this.onclick()" onclick="this.parentNode.children[7].className = this.parentNode.children[7].className == 'sel' ? '' : 'sel';"></div>
 	<div id="toolbar">
